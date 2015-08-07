@@ -17,6 +17,7 @@
 		7A6E20851B6A184100302A3D /* AXCircleAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E20841B6A184100302A3D /* AXCircleAnimationVC.m */; };
 		7A6E20881B6A186C00302A3D /* AXShakeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E20871B6A186C00302A3D /* AXShakeAnimationVC.m */; };
 		7A6E208B1B6A28A400302A3D /* AXPicChangeAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E208A1B6A28A400302A3D /* AXPicChangeAnimationVC.m */; };
+		7A80528B1B7448630074BC0E /* AXSubLayerTransformVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A80528A1B7448630074BC0E /* AXSubLayerTransformVC.m */; };
 		7AAD13351B730BBD00652D66 /* AXPropertyFunctionTestVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD13341B730BBD00652D66 /* AXPropertyFunctionTestVC.m */; };
 		7AAD13401B733E0D00652D66 /* PulsingHaloLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD133F1B733E0D00652D66 /* PulsingHaloLayer.m */; };
 		7AAD13431B7342EF00652D66 /* AXPulsingHaloVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AAD13421B7342EF00652D66 /* AXPulsingHaloVC.m */; };
@@ -55,6 +56,8 @@
 		7A6E20871B6A186C00302A3D /* AXShakeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXShakeAnimationVC.m; sourceTree = "<group>"; };
 		7A6E20891B6A28A400302A3D /* AXPicChangeAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXPicChangeAnimationVC.h; sourceTree = "<group>"; };
 		7A6E208A1B6A28A400302A3D /* AXPicChangeAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXPicChangeAnimationVC.m; sourceTree = "<group>"; };
+		7A8052891B7448630074BC0E /* AXSubLayerTransformVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXSubLayerTransformVC.h; sourceTree = "<group>"; };
+		7A80528A1B7448630074BC0E /* AXSubLayerTransformVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXSubLayerTransformVC.m; sourceTree = "<group>"; };
 		7AAD13331B730BBD00652D66 /* AXPropertyFunctionTestVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXPropertyFunctionTestVC.h; sourceTree = "<group>"; };
 		7AAD13341B730BBD00652D66 /* AXPropertyFunctionTestVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXPropertyFunctionTestVC.m; sourceTree = "<group>"; };
 		7AAD133E1B733E0D00652D66 /* PulsingHaloLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PulsingHaloLayer.h; path = Depencence/PulsingHalo/PulsingHaloLayer.h; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				7AAD13421B7342EF00652D66 /* AXPulsingHaloVC.m */,
 				7AAD13471B7344C600652D66 /* AXPathMenuAnimationVC.h */,
 				7AAD13481B7344C600652D66 /* AXPathMenuAnimationVC.m */,
+				7A8052891B7448630074BC0E /* AXSubLayerTransformVC.h */,
+				7A80528A1B7448630074BC0E /* AXSubLayerTransformVC.m */,
 			);
 			name = AnimationVC;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 				7A6E20881B6A186C00302A3D /* AXShakeAnimationVC.m in Sources */,
 				7AAD13491B7344C600652D66 /* AXPathMenuAnimationVC.m in Sources */,
 				7A6E20851B6A184100302A3D /* AXCircleAnimationVC.m in Sources */,
+				7A80528B1B7448630074BC0E /* AXSubLayerTransformVC.m in Sources */,
 				7AAD13351B730BBD00652D66 /* AXPropertyFunctionTestVC.m in Sources */,
 				7A6E20621B6A0E2D00302A3D /* ViewController.m in Sources */,
 				7AAD13501B73463A00652D66 /* QuadCurveMenuItem.m in Sources */,

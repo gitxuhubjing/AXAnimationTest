@@ -22,12 +22,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dataSourceArray = @[@{keyItemName : @"属性效果测试",keysegueName :@"PropertyFunctionTest"},
+    self.dataSourceArray = @[@{keyItemName : @"fillMode属性效果测试",keysegueName :@"PropertyFunctionTest"},
                              @{keyItemName : @"圆周运动", keysegueName :@"CircleAnimation"},
                              @{keyItemName : @"抖动", keysegueName :@"ShakeAnimation"},
                              @{keyItemName : @"图片切换效果", keysegueName :@"PicChangeAnimation"},
                              @{keyItemName : @"脉冲", keysegueName :@"PulsingHaloAnimation"},
-                             @{keyItemName : @"path菜单效果", keysegueName :@"PathAnimation"}];
+                             @{keyItemName : @"path菜单效果", keysegueName :@"PathAnimation"},
+                             @{keyItemName : @"sublayerTransform", keysegueName :@"SubLayerTransform"}];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
