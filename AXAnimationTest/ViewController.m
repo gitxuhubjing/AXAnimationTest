@@ -28,7 +28,8 @@
                              @{keyItemName : @"图片切换效果", keysegueName :@"PicChangeAnimation"},
                              @{keyItemName : @"脉冲", keysegueName :@"PulsingHaloAnimation"},
                              @{keyItemName : @"path菜单效果", keysegueName :@"PathAnimation"},
-                             @{keyItemName : @"sublayerTransform", keysegueName :@"SubLayerTransform"}];
+                             @{keyItemName : @"sublayerTransform", keysegueName :@"SubLayerTransform"},
+                             @{keyItemName : @"SparkRecordCircle", keysegueName : @"RecordCircleAnimation"}];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{

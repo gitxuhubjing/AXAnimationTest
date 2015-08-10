@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="k8x-VW-DUw">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
@@ -34,11 +35,31 @@
                         <segue destination="VVS-uy-i53" kind="push" identifier="PulsingHaloAnimation" id="zoa-78-iWG"/>
                         <segue destination="ecj-YU-CHB" kind="push" identifier="PathAnimation" id="BQL-zX-c64"/>
                         <segue destination="2dd-di-kEJ" kind="push" identifier="SubLayerTransform" id="dcS-ts-Pf4"/>
+                        <segue destination="gLK-6f-QpX" kind="push" identifier="RecordCircleAnimation" id="rUJ-xh-9td"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hb1-Xj-wD0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="277" y="-684"/>
+        </scene>
+        <!--Record CircleVC-->
+        <scene sceneID="gOY-YO-OsI">
+            <objects>
+                <viewController id="gLK-6f-QpX" customClass="AXRecordCircleVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mfq-1Y-8hS"/>
+                        <viewControllerLayoutGuide type="bottom" id="xV4-wk-ZlP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ykd-Qb-fzq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zox-8L-5e8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8eF-NB-o1r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="-673"/>
         </scene>
         <!--Shake AnimationVC-->
         <scene sceneID="hSi-qp-oCn">
@@ -88,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyy" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1p2-j5-jgC"/>
@@ -290,7 +311,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="desktop" width="400" height="400"/>
+        <image name="jyy" width="200" height="201"/>
         <image name="kia" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
