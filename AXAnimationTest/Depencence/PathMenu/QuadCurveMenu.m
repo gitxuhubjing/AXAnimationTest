@@ -14,6 +14,7 @@
 #define FARRADIUS 160.0f
 #define STARTPOINT CGPointMake(50, 430)
 #define TIMEOFFSET 0.026f
+#define MULTIPLE  10
 
 
 @interface QuadCurveMenu ()
@@ -125,7 +126,7 @@
     
     // rotate "add" button
     float angle = self.isExpanding ? -M_PI_4 : 0.0f;
-    [UIView animateWithDuration:2.0f animations:^{
+    [UIView animateWithDuration:0.2f * MULTIPLE animations:^{
         _addButton.transform = CGAffineTransformMakeRotation(angle);
     }];
     
@@ -178,7 +179,7 @@
     
     // rotate add button
     float angle = self.isExpanding ? -M_PI_4 : 0.0f;
-    [UIView animateWithDuration:2.0f animations:^{
+    [UIView animateWithDuration:0.2f * MULTIPLE animations:^{
         _addButton.transform = CGAffineTransformMakeRotation(angle);
     }];
     
@@ -205,13 +206,13 @@
     
     CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotateAnimation.values = [NSArray arrayWithObjects:[NSNumber numberWithFloat:M_PI],[NSNumber numberWithFloat:0.0f], nil];
-    rotateAnimation.duration = 5.0f;
+    rotateAnimation.duration = 0.5f * MULTIPLE;
     rotateAnimation.keyTimes = [NSArray arrayWithObjects:
                                 [NSNumber numberWithFloat:.3], 
                                 [NSNumber numberWithFloat:.4], nil]; 
     
     CAKeyframeAnimation *positionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    positionAnimation.duration = 5.0f;
+    positionAnimation.duration = 0.5f * MULTIPLE;
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, item.startPoint.x, item.startPoint.y);
     CGPathAddLineToPoint(path, NULL, item.farPoint.x, item.farPoint.y);
@@ -222,7 +223,7 @@
     
     CAAnimationGroup *animationgroup = [CAAnimationGroup animation];
     animationgroup.animations = [NSArray arrayWithObjects:positionAnimation, rotateAnimation, nil];
-    animationgroup.duration = 5.0f;
+    animationgroup.duration = 0.5f * MULTIPLE;
     animationgroup.fillMode = kCAFillModeForwards;
     animationgroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     [item.layer addAnimation:animationgroup forKey:@"Expand"];
@@ -246,14 +247,14 @@
     
     CAKeyframeAnimation *rotateAnimation = [CAKeyframeAnimation animationWithKeyPath:@"transform.rotation.z"];
     rotateAnimation.values = [NSArray arrayWithObjects:[NSNumber numberWithFloat:0.0f],[NSNumber numberWithFloat:M_PI * 2],[NSNumber numberWithFloat:0.0f], nil];
-    rotateAnimation.duration = 5.0f;
+    rotateAnimation.duration = 0.5f *MULTIPLE;
     rotateAnimation.keyTimes = [NSArray arrayWithObjects:
                                 [NSNumber numberWithFloat:.0], 
                                 [NSNumber numberWithFloat:.4],
                                 [NSNumber numberWithFloat:.7], nil];
         
     CAKeyframeAnimation *positionAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
-    positionAnimation.duration = 5.0f;
+    positionAnimation.duration = 0.5f * MULTIPLE;
     CGMutablePathRef path = CGPathCreateMutable();
     CGPathMoveToPoint(path, NULL, item.endPoint.x, item.endPoint.y);
     CGPathAddLineToPoint(path, NULL, item.farPoint.x, item.farPoint.y);
@@ -263,7 +264,7 @@
     
     CAAnimationGroup *animationgroup = [CAAnimationGroup animation];
     animationgroup.animations = [NSArray arrayWithObjects:positionAnimation, rotateAnimation, nil];
-    animationgroup.duration = 5.0f;
+    animationgroup.duration = 0.5f * MULTIPLE;
     animationgroup.fillMode = kCAFillModeForwards;
     animationgroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
     [item.layer addAnimation:animationgroup forKey:@"Close"];
@@ -285,7 +286,7 @@
     
     CAAnimationGroup *animationgroup = [CAAnimationGroup animation];
     animationgroup.animations = [NSArray arrayWithObjects:positionAnimation, scaleAnimation, opacityAnimation, nil];
-    animationgroup.duration = 3.0f;
+    animationgroup.duration = 0.3f * MULTIPLE;
     animationgroup.fillMode = kCAFillModeForwards;
 
     return animationgroup;
@@ -305,7 +306,7 @@
     
     CAAnimationGroup *animationgroup = [CAAnimationGroup animation];
     animationgroup.animations = [NSArray arrayWithObjects:positionAnimation, scaleAnimation, opacityAnimation, nil];
-    animationgroup.duration = 3.0f;
+    animationgroup.duration = 0.3f * MULTIPLE;
     animationgroup.fillMode = kCAFillModeForwards;
     
     return animationgroup;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A6050191B78473F0047E035 /* TTCounterLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6050161B78473F0047E035 /* TTCounterLabel.m */; };
+		7A60501A1B78473F0047E035 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6050181B78473F0047E035 /* TTTAttributedLabel.m */; };
 		7A6E205C1B6A0E2D00302A3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E205B1B6A0E2D00302A3D /* main.m */; };
 		7A6E205F1B6A0E2D00302A3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E205E1B6A0E2D00302A3D /* AppDelegate.m */; };
 		7A6E20621B6A0E2D00302A3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E20611B6A0E2D00302A3D /* ViewController.m */; };
@@ -37,6 +39,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A6050151B78473F0047E035 /* TTCounterLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTCounterLabel.h; path = Depencence/TTCouterLabel/TTCounterLabel.h; sourceTree = "<group>"; };
+		7A6050161B78473F0047E035 /* TTCounterLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTCounterLabel.m; path = Depencence/TTCouterLabel/TTCounterLabel.m; sourceTree = "<group>"; };
+		7A6050171B78473F0047E035 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TTTAttributedLabel.h; path = Depencence/TTCouterLabel/TTTAttributedLabel.h; sourceTree = "<group>"; };
+		7A6050181B78473F0047E035 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TTTAttributedLabel.m; path = Depencence/TTCouterLabel/TTTAttributedLabel.m; sourceTree = "<group>"; };
 		7A6E20561B6A0E2D00302A3D /* AXAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6E205A1B6A0E2D00302A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A6E205B1B6A0E2D00302A3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +96,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A6050141B7846B30047E035 /* TTCouterLabel */ = {
+			isa = PBXGroup;
+			children = (
+				7A6050151B78473F0047E035 /* TTCounterLabel.h */,
+				7A6050161B78473F0047E035 /* TTCounterLabel.m */,
+				7A6050171B78473F0047E035 /* TTTAttributedLabel.h */,
+				7A6050181B78473F0047E035 /* TTTAttributedLabel.m */,
+			);
+			name = TTCouterLabel;
+			sourceTree = "<group>";
+		};
 		7A6E204D1B6A0E2D00302A3D = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +192,7 @@
 		7AAD133A1B733D3200652D66 /* Dependence */ = {
 			isa = PBXGroup;
 			children = (
+				7A6050141B7846B30047E035 /* TTCouterLabel */,
 				7AAD134A1B73462600652D66 /* PathMenu */,
 				7AAD133D1B733DEC00652D66 /* PulsingHalo */,
 			);
@@ -304,6 +322,7 @@
 				7AAD13401B733E0D00652D66 /* PulsingHaloLayer.m in Sources */,
 				7A6E20881B6A186C00302A3D /* AXShakeAnimationVC.m in Sources */,
 				7AAD13491B7344C600652D66 /* AXPathMenuAnimationVC.m in Sources */,
+				7A6050191B78473F0047E035 /* TTCounterLabel.m in Sources */,
 				7A6E20851B6A184100302A3D /* AXCircleAnimationVC.m in Sources */,
 				7A80528B1B7448630074BC0E /* AXSubLayerTransformVC.m in Sources */,
 				7AAD13351B730BBD00652D66 /* AXPropertyFunctionTestVC.m in Sources */,
@@ -314,6 +333,7 @@
 				7AAD134F1B73463A00652D66 /* QuadCurveMenu.m in Sources */,
 				7A6E205C1B6A0E2D00302A3D /* main.m in Sources */,
 				7A6E208B1B6A28A400302A3D /* AXPicChangeAnimationVC.m in Sources */,
+				7A60501A1B78473F0047E035 /* TTTAttributedLabel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

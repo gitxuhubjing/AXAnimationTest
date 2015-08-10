@@ -28,6 +28,9 @@
     orbit.rotationMode = kCAAnimationRotateAuto;
     
     [self.circleIV.layer addAnimation:orbit forKey:@"orbit"];
+    
+    //这样写
+    //CABasicAnimation *rotationAnimation = [CABasicAnimation animationWithKeyPath:@"transform.rotation.z"];
 }
 
 - (void)didReceiveMemoryWarning {

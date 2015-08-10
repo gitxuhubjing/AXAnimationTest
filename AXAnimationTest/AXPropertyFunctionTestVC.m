@@ -9,15 +9,22 @@
 #import "AXPropertyFunctionTestVC.h"
 
 @interface AXPropertyFunctionTestVC ()
-
+@property (assign, nonatomic) IBOutlet TTCounterLabel *counterLabel;
 @end
 
 @implementation AXPropertyFunctionTestVC
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:YES];
+    [self.counterLabel stop];
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     [self fillModeTest];
+    [self customiseAppearance];
+    [self.counterLabel start];
 
 }
 
@@ -34,13 +41,32 @@
     boundAn.toValue = [NSValue valueWithCGRect:CGRectMake(0.0f, 0.0f, 300.0f, 300.0f)];
     boundAn.beginTime = 2.0f;
     boundAn.duration = 5.0f;
-    boundAn.fillMode = kCAFillModeForwards;
+    boundAn.fillMode = kCAFillModeRemoved;
     CAAnimationGroup *group = [CAAnimationGroup animation];
     group.animations = [NSArray arrayWithObject:boundAn];
     group.duration = 10.0f;
     
     [colorLayer addAnimation:group forKey:nil];
 }
+
+
+#pragma mark -- 
+#pragma mark TTCounterLabel Method
+
+- (void)customiseAppearance {
+    [self.counterLabel setBoldFont:[UIFont fontWithName:@"HelveticaNeue-Medium" size:35]];
+    [self.counterLabel setRegularFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:35]];
+    
+    // The font property of the label is used as the font for H,M,S and MS
+    [self.counterLabel setFont:[UIFont fontWithName:@"HelveticaNeue-UltraLight" size:25]];
+    
+    // Default label properties
+    self.counterLabel.textColor = [UIColor darkGrayColor];
+    
+    // After making any changes we need to call update appearance
+    [self.counterLabel updateApperance];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

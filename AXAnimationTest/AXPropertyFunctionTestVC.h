@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TTCounterLabel.h"
 
-@interface AXPropertyFunctionTestVC : UIViewController
+@interface AXPropertyFunctionTestVC : UIViewController<TTCounterLabelDelegate>
 
 @end

@@ -54,7 +54,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uz0-XP-wnV">
                                 <rect key="frame" x="85" y="264" width="150" height="40"/>
-                                <color key="backgroundColor" red="0.77580180919999997" green="0.77559621710000004" blue="0.77898848679999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.30306846216578948" blue="0.040810032852631573" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="L8s-QJ-SB8"/>
                                     <constraint firstAttribute="height" constant="40" id="wdc-5l-D2j"/>
@@ -88,7 +88,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyy" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1p2-j5-jgC"/>
@@ -147,9 +147,28 @@
                     <view key="view" contentMode="scaleToFill" id="umR-QO-Ja7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEt-YN-kQ0" customClass="TTCounterLabel">
+                                <rect key="frame" x="91" y="429" width="139" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="JJJ-WT-nLM"/>
+                                    <constraint firstAttribute="width" constant="139" id="rU2-ua-v0r"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="OEt-YN-kQ0" secondAttribute="centerX" constant="-0.5" id="9IU-ez-Aaq"/>
+                            <constraint firstItem="e8W-4t-UF8" firstAttribute="top" secondItem="OEt-YN-kQ0" secondAttribute="bottom" constant="64" id="S3I-fd-UH2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="z5O-TN-iLY"/>
+                    <connections>
+                        <outlet property="counterLabel" destination="OEt-YN-kQ0" id="DCR-cV-eVS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XW7-kU-kOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -271,7 +290,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jyy" width="200" height="201"/>
+        <image name="desktop" width="400" height="400"/>
         <image name="kia" width="200" height="200"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
