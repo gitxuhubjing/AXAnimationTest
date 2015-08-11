@@ -11,6 +11,7 @@
 		7A60501A1B78473F0047E035 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6050181B78473F0047E035 /* TTTAttributedLabel.m */; };
 		7A60501E1B78534F0047E035 /* RecordingCircleOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A60501D1B78534F0047E035 /* RecordingCircleOverlayView.m */; };
 		7A6050211B7853860047E035 /* AXRecordCircleVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6050201B7853860047E035 /* AXRecordCircleVC.m */; };
+		7A61BEAB1B79979A00A04287 /* AXNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A61BEAA1B79979A00A04287 /* AXNavigationController.m */; };
 		7A6E205C1B6A0E2D00302A3D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E205B1B6A0E2D00302A3D /* main.m */; };
 		7A6E205F1B6A0E2D00302A3D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E205E1B6A0E2D00302A3D /* AppDelegate.m */; };
 		7A6E20621B6A0E2D00302A3D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6E20611B6A0E2D00302A3D /* ViewController.m */; };
@@ -49,6 +50,8 @@
 		7A60501D1B78534F0047E035 /* RecordingCircleOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RecordingCircleOverlayView.m; path = Depencence/RecordCircle/RecordingCircleOverlayView.m; sourceTree = "<group>"; };
 		7A60501F1B7853860047E035 /* AXRecordCircleVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXRecordCircleVC.h; sourceTree = "<group>"; };
 		7A6050201B7853860047E035 /* AXRecordCircleVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXRecordCircleVC.m; sourceTree = "<group>"; };
+		7A61BEA91B79979A00A04287 /* AXNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AXNavigationController.h; sourceTree = "<group>"; };
+		7A61BEAA1B79979A00A04287 /* AXNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AXNavigationController.m; sourceTree = "<group>"; };
 		7A6E20561B6A0E2D00302A3D /* AXAnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AXAnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A6E205A1B6A0E2D00302A3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A6E205B1B6A0E2D00302A3D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -149,6 +152,8 @@
 				7A6E205E1B6A0E2D00302A3D /* AppDelegate.m */,
 				7A6E20601B6A0E2D00302A3D /* ViewController.h */,
 				7A6E20611B6A0E2D00302A3D /* ViewController.m */,
+				7A61BEA91B79979A00A04287 /* AXNavigationController.h */,
+				7A61BEAA1B79979A00A04287 /* AXNavigationController.m */,
 				7A6E20631B6A0E2D00302A3D /* Main.storyboard */,
 				7A6E20661B6A0E2D00302A3D /* Images.xcassets */,
 				7A6E20681B6A0E2D00302A3D /* LaunchScreen.xib */,
@@ -345,6 +350,7 @@
 				7A6050191B78473F0047E035 /* TTCounterLabel.m in Sources */,
 				7A6E20851B6A184100302A3D /* AXCircleAnimationVC.m in Sources */,
 				7A80528B1B7448630074BC0E /* AXSubLayerTransformVC.m in Sources */,
+				7A61BEAB1B79979A00A04287 /* AXNavigationController.m in Sources */,
 				7AAD13351B730BBD00652D66 /* AXPropertyFunctionTestVC.m in Sources */,
 				7A6E20621B6A0E2D00302A3D /* ViewController.m in Sources */,
 				7AAD13501B73463A00652D66 /* QuadCurveMenuItem.m in Sources */,

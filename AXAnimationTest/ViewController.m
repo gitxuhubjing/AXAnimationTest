@@ -22,6 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     self.dataSourceArray = @[@{keyItemName : @"fillMode属性效果测试",keysegueName :@"PropertyFunctionTest"},
                              @{keyItemName : @"圆周运动", keysegueName :@"CircleAnimation"},
                              @{keyItemName : @"抖动", keysegueName :@"ShakeAnimation"},
@@ -31,6 +32,9 @@
                              @{keyItemName : @"sublayerTransform", keysegueName :@"SubLayerTransform"},
                              @{keyItemName : @"SparkRecordCircle", keysegueName : @"RecordCircleAnimation"}];
 }
+
+#pragma mark --
+#pragma mark UITableViewDelegate UITableViewDataSource
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.dataSourceArray.count;
@@ -49,6 +53,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [self performSegueWithIdentifier:self.dataSourceArray[[indexPath row]][keysegueName] sender:nil];
 }
+
 
 
 - (void)didReceiveMemoryWarning {

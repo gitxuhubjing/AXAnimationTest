@@ -295,7 +295,7 @@
         <!--Navigation Controller-->
         <scene sceneID="uB1-IC-2Tf">
             <objects>
-                <navigationController id="k8x-VW-DUw" sceneMemberID="viewController">
+                <navigationController id="k8x-VW-DUw" customClass="AXNavigationController" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bSd-I5-pW6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -311,8 +311,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jyy" width="200" height="201"/>
-        <image name="kia" width="200" height="200"/>
+        <image name="jyy" width="400" height="402"/>
+        <image name="kia" width="400" height="400"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
