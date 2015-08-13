@@ -14,7 +14,7 @@
 #define FARRADIUS 160.0f
 #define STARTPOINT CGPointMake(50, 430)
 #define TIMEOFFSET 0.026f
-#define MULTIPLE  10
+#define MULTIPLE  1
 
 
 @interface QuadCurveMenu ()

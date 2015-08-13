@@ -109,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jyy" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desktop" translatesAutoresizingMaskIntoConstraints="NO" id="1an-hr-ZeC">
                                 <rect key="frame" x="60" y="184" width="200" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="1p2-j5-jgC"/>
@@ -311,7 +311,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="jyy" width="400" height="402"/>
+        <image name="desktop" width="400" height="400"/>
         <image name="kia" width="400" height="400"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
